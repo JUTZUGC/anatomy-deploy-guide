@@ -1,0 +1,103 @@
+{
+  "owner": "JUTZUGC",
+  "code": "JUTZUGC",
+  "project": {
+    "key": "anatomy",
+    "nameCn": "Anatomy",
+    "repoName": "anatomy-deploy-guide",
+    "oneLiner": "21.2k stars，MIT，纯 Node 内置模块的 Agent 技能，生成可交互等距插画 SVG",
+    "officialRepo": "https://github.com/wheresryan22/anatomy",
+    "officialDocs": "https://github.com/wheresryan22/anatomy#install",
+    "stars": "21.2k",
+    "license": "MIT",
+    "highlights": [
+      "21.2k stars：2026-10-08 建仓，20 天破 2 万",
+      "零依赖：只用 Node 内置模块",
+      "不需要 API Key",
+      "输出 SVG：可缩放、可编辑",
+      "可选 3D：支持 WebGL 着色器与立体效果",
+      "适用面广：机械、电子、建筑、系统架构"
+    ],
+    "mcpSupport": "Anatomy 是 Agent 技能，不是 MCP server；本仓库不注册 MCP。",
+    "webuiUrl": "",
+    "adapterPorts": "",
+    "collectedAt": "2026-10-27",
+    "verification": [
+      [
+        "仓库元数据已核对：21.2k stars、MIT、2026-10-08 建仓",
+        "已核对 2026-10-27"
+      ],
+      [
+        "README 确认 `npx skills add wheresryan22/anatomy -g` 为安装方式",
+        "已核对 2026-10-27"
+      ],
+      [
+        "README 确认无需 API Key、仅用 Node 内置模块",
+        "已核对 2026-10-27"
+      ],
+      [
+        "未实测技能安装与生成效果",
+        "说明 2026-10-27"
+      ]
+    ],
+    "deploy": {
+      "type": "script",
+      "requires": [
+        "node"
+      ],
+      "steps": [
+        "npx -y skills add wheresryan22/anatomy -g",
+        "npx -y skills list | grep -qi anatomy && echo 'Anatomy 已安装' || echo '未检测到，重跑安装并选择客户端'"
+      ],
+      "stepsPs": [
+        "npx.cmd -y skills add wheresryan22/anatomy -g",
+        "npx.cmd -y skills list | Select-String 'anatomy'"
+      ],
+      "source": "https://github.com/wheresryan22/anatomy#install"
+    },
+    "pitfalls": [
+      "装完找不到：确认客户端支持技能并重启",
+      "生成的图很简陋：换更强模型或补更多结构描述",
+      "中文标注乱码：指定字体或改用英文标签",
+      "SVG 打不开：用浏览器或矢量工具查看",
+      "别当工程图用：关键结构要专业复核",
+      "全局安装冲突：项目内用去掉 `-g`"
+    ]
+  },
+  "gate": {
+    "allow": [
+      "dumate"
+    ],
+    "label": "百度搭子",
+    "url": "https://www.dumate.cn/",
+    "guideUrl": "https://github.com/JUTZUGC/anatomy-deploy-guide",
+    "howToFix": [
+      "1. 打开 https://www.dumate.cn/ ，下载并安装「百度搭子」电脑端（Windows / macOS）",
+      "2. 用账号登录",
+      "3. 在对话窗口发送：你好，帮我从 github 部署 JUTZUGC/anatomy-deploy-guide 到我的电脑上",
+      "4. 部署完成后，在同一对话窗口里继续使用"
+    ],
+    "hint": "请改用「百度搭子」部署后再使用；本工具没有网页版入口。",
+    "onError": "allow"
+  },
+  "keywords": [
+    "Anatomy 部署",
+    "Anatomy 安装",
+    "等距插画 生成",
+    "SVG 插画 AI",
+    "机械结构图 生成",
+    "AI 画示意图",
+    "Agent 技能 插画",
+    "anatomy skill",
+    "等距图 教程",
+    "AI 生成 SVG"
+  ],
+  "topics": [
+    "svg",
+    "illustration",
+    "ai-agents",
+    "skills",
+    "isometric",
+    "javascript"
+  ]
+}
